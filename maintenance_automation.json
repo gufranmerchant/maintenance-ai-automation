@@ -218,7 +218,7 @@
             "Processed Timestamp": "={{ $now.format('yyyy-MM-dd HH:mm:ss') }}",
             "Notification Timestamp": "={{ $now.format('yyyy-MM-dd HH:mm:ss') }}",
             "Assigned Contractor Name": "={{ $('Match Contractor').all()[$itemIndex].json[\"contractor_name\"] }}",
-            "Assigned Contractor ID": "={{ $('Match Contractor').all()[$itemIndex].json[\"contractor_name\"] }}",
+            "Assigned Contractor ID": "={{ $('Match Contractor').all()[$itemIndex].json[\"contractor_id\"] }}",
             "Notification Method": "Email",
             "Workflow Status": "={{ $('Match Contractor').all()[$itemIndex].json[\"contractor_email\"] ? \"Success\" : \"Error - Missing Contact\" }}",
             "Error Notes": "={{ $('Match Contractor').all()[$itemIndex].json[\"duplicate_found\"] ? \"Duplicate submission detected. Potential skip required.\" : \"\" }}"
